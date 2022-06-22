@@ -218,7 +218,7 @@ def generate_val_list(path_in):
                 if first_part in success_list:
 
 
-                    output.write(success_dic[first_part].zfill(6) + ".jpg" + ";" + second_part[0] + ";" + second_part[1] + ";" + second_part[2]+"\n")
+                    output.write(str((int(success_dic[first_part])-1)).zfill(6) + ".jpg" + ";" + second_part[0] + ";" + second_part[1] + ";" + second_part[2]+"\n")
 
 
 
